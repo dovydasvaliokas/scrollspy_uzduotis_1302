@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="lt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+        <title>Logistikos Įmonė</title>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="50">
+        <!-- MENIU VIRSUTINE JUOSTA -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="img/navbar-logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#pirmas">Pagrindinis</a>
+                    </li>
+
+                    <li>
+                        <a href="#antras">Sandėliai</a>
+                    </li>
+
+                    <li>
+                        <a href="#trecias">Partneriai</a>
+                    </li>
+
+                    <li>
+                        <a href="#ketvirtas">Paslaugos</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-divs">
+            <!-- Pirmas section-->
+            <div class="section main-flexbox-container" id="pirmas">
+                <div class="main-logo-div display-inline-block">
+                    <img src="img/main-logo.png" alt="Puslapio pagrindinis logo">
+                </div>
+
+                <div class="main-info-div display-inline-block">
+                    <h2>"LOGISTIKOS ĮMONĖ"</h2>
+                    <p>"Logistikos Įmonė" yra viena iš geriausia įmonių logistikos srityje. <br>Renkdamiesi mūsų įmone, jūs esate užgarantuoti XXXX, YYYY, ZZZ, CCCC.</p>
+                    <p>Priimkite svarbų ir teisingą sprendimą jau šiandien - rinkitės mus.</p>
+                    <h3>Susisiekite su mumis!</h3>
+                    <div class="kontaktu-flexbox">
+                        <div class="kontaktu-tipai">
+                            <p>E-mail:</p>
+                            <p>Telefonu:</p>
+                            <p>Adresu:</p>
+                        </div>
+                        <div class="patys-kontaktai">
+                            <p>info@logostikos-imone.lt</p>
+                            <p>86 86 86 6668</p>
+                            <p>1, Pagrindinė g,<br> Vilnius,<br> Lietuva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Antras section-->
+            <div class="section" id="antras">
+                <div class="sandeliai-header">
+                    <h2>Mūsų sandėliai</h2>
+                </div>
+                <div class="warehouse-flex-container">
+                    <div class="navbar navbar-inverse warehouse-soninis-navbar">
+                        <div class="inside-soninis-div">
+                            <ul class="nav flex-column">
+                            <li onclick="paspaudusSandelioTaba('vilnius-tab')">Vilnius</li>
+                            <li onclick="paspaudusSandelioTaba('kaunas-tab')">Kaunas</li>
+                            <li onclick="paspaudusSandelioTaba('klaipeda-tab')">Klaipėda</li>
+                            <li onclick="paspaudusSandelioTaba('varsuva-tab')">Varšuva</li> 
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="warehouse-content-div">
+                        <!-- VILNIUS TAB -->
+                        <div class="content-tab" id="vilnius-tab">
+                            <h3>Vilnius</h3>
+                            <p>Vilniaus sandėlys specializuojasi YYYY_XXXX, taip pat ir ZZZZ_CCCC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nulla consequuntur porro vitae voluptatibus? Iure pariatur obcaecati ipsam delectus atque deleniti? Voluptatum illum id et molestias quaerat illo temporibus unde!.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nobis in vitae, dolorem nihil ipsum, distinctio obcaecati deserunt nesciunt autem at? Obcaecati ullam fugiat deserunt natus amet, nihil ipsam suscipit?.</p>
+                            <h4>Vilniaus padalinio kontaktai:</h4>
+                            <div class="kontaktu-flexbox">
+                                <div class="kontaktu-tipai">
+                                    <p>E-mail:</p>
+                                    <p>Telefonu:</p>
+                                    <p>Adresu:</p>
+                                </div>
+                                <div class="patys-kontaktai">
+                                    <p>vilnius-info@logostikos-imone.lt</p>
+                                    <p>86 86 86 7777</p>
+                                    <p>3B Sandėlių g.,<br> Vilnius,<br> Lietuva</p>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                        <!-- KAUNAS TAB -->
+                        <div class="content-tab" id="kaunas-tab">
+                            <h3>Kaunas</h3>
+                            <p>Kauno sandėlys specializuojasi asdasASD, taip pat ir aeafaea. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui voluptates exercitationem obcaecati aliquam necessitatibus neque quibusdam, dolor, laboriosam excepturi tempora illum. Eum rerum a excepturi labore voluptas accusamus molestiae quos.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non asperiores omnis ipsam praesentium explicabo pariatur, facere dignissimos doloribus aspernatur repudiandae earum ratione, facilis voluptatum consequuntur velit reprehenderit laborum cupiditate perspiciatis.</p>
+                            <h4>Kauno padalinio kontaktai:</h4>
+                            <div class="kontaktu-flexbox">
+                                <div class="kontaktu-tipai">
+                                    <p>E-mail:</p>
+                                    <p>Telefonu:</p>
+                                    <p>Adresu:</p>
+                                </div>
+                                <div class="patys-kontaktai">
+                                    <p>kaunas-info@logostikos-imone.lt</p>
+                                    <p>86 86 86 9999</p>
+                                    <p>14 Logistikos g.,<br> Kaunas,<br> Lietuva</p>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                        <!-- KLAIPEDA TAB -->
+                        <div class="content-tab" id="klaipeda-tab">
+                            <h3>Klaipėda</h3>
+                            <p>Klaipėdos sandėlys specializuojasi RRR_SADASD_E, taip pat ir ZZZZ_CCCSASC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed saepe eaque earum, commodi odio nisi nostrum nobis dicta, mollitia id porro necessitatibus consequuntur ducimus aperiam velit. Laborum, consequatur reiciendis! Voluptates.</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto at sunt animi ipsum id, perspiciatis dolorum? Et pariatur repudiandae, voluptate iste quas quam, consectetur nihil assumenda temporibus vitae, autem incidunt.</p>
+                            <h4>Klaipėdos padalinio kontaktai:</h4>
+                            <div class="kontaktu-flexbox">
+                                <div class="kontaktu-tipai">
+                                    <p>E-mail:</p>
+                                    <p>Telefonu:</p>
+                                    <p>Adresu:</p>
+                                </div>
+                                <div class="patys-kontaktai">
+                                    <p>klaipeda-info@logostikos-imone.lt</p>
+                                    <p>86 86 86 1111</p>
+                                    <p>18C Jūros g.,<br> Klaipėda,<br> Lietuva</p>
+                                </div>
+                            </div>  
+                        </div> 
+
+                        <!-- WARSAWA TAB -->
+                        <div class="content-tab" id="varsuva-tab">
+                            <h3>Varšuvos</h3>
+                            <p>Varšuvos sandėlys specializuojasi YYYY_XXXX, taip pat ir ZZZZ_CCCC. Norėdami gauti geriausią aptarnavimą RRRR šalyje bei KKKKK srityje - jūs privalote rinktis mūsų Vilniaus padalinį.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias sed magnam animi nisi repellat fugiat sequi maiores possimus obcaecati tempora culpa, aliquid ad officiis suscipit dolores laboriosam quisquam mollitia optio?</p>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem, reiciendis quis? Tempora impedit modi, eos esse quibusdam natus doloremque! Repellendus accusamus asperiores maiores voluptatem ut consequuntur voluptas ipsum est distinctio.</p>
+                            <h4>Varšuvos padalinio kontaktai:</h4>
+                            <div class="kontaktu-flexbox">
+                                <div class="kontaktu-tipai">
+                                    <p>E-mail:</p>
+                                    <p>Telefonu:</p>
+                                    <p>Adresu:</p>
+                                </div>
+                                <div class="patys-kontaktai">
+                                    <p>vilnius-info@logostikos-imone.lt</p>
+                                    <p>86 86 86 7777</p>
+                                    <p>74 Warsawa ul.,<br> Varšuva,<br> Lenkija</p>
+                                </div>
+                            </div>  
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Trecias section-->
+            <div class="section" id="trecias">
+                <div class="section-header">
+                    <h2>Mūsų užtikrintumi pasitiki šios didžiosos kompanijos</h2>
+                </div>
+                <div class="carousel slide" id="imoniuKarusele" data-ride="carousel">
+                    <!-- Skaidres -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <a href="http://www.imone1.lt">
+                                <img src="img/partners_img/company1.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="http://www.imone2.lt">
+                                <img src="img/partners_img/company2.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="http://www.imone3.lt">
+                                <img src="img/partners_img/company3.png" alt="">
+                            </a>
+                        </div>
+
+                        <div class="item">
+                            <a href="http://www.imone4.lt">
+                                <img src="img/partners_img/company4.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#imoniuKarusele" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Ankstesnis</span>
+                      </a>
+                    <a class="right carousel-control" href="#imoniuKarusele" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Sekantis</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="section" id="ketvirtas">
+                <div class="section-header">
+                    <h2>Paslaugos</h2>
+                </div>
+                <!-- VANDENS KAINARASTIS-->
+                <div class="kainarastis" id="vandensKainarastis">
+                    <div class="kainarastis-header">
+                        <span onclick="grazintiPaslaugas()" class="float-right close-button">X</span>
+                        <h2>Vandens paslaugų kainaraštis</h2>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Paslauga:</th>
+                            <th>Kaina:</th>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 1</td>
+                            <td>399.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 2</td>
+                            <td>149.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 3</td>
+                            <td>479.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 4</td>
+                            <td>143.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 5</td>
+                            <td>399.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 6</td>
+                            <td>899.99</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- SAUSUMOS KAINARASTIS-->
+                <div class="kainarastis" id="sausumosKainarastis">
+                    <div class="kainarastis-header">
+                        <span onclick="grazintiPaslaugas()" class="float-right close-button">X</span>
+                        <h2>Sausumos paslaugų kainaraštis</h2>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Paslauga:</th>
+                            <th>Kaina:</th>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 1</td>
+                            <td>399.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 2</td>
+                            <td>149.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 3</td>
+                            <td>479.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 4</td>
+                            <td>143.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 5</td>
+                            <td>399.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 6</td>
+                            <td>899.99</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- ORO KAINARASTIS-->
+                <div class="kainarastis" id="oroKainarastis">
+                    <div class="kainarastis-header">
+                        <span onclick="grazintiPaslaugas()" class="float-right close-button">X</span>
+                        <h2>ORO paslaugų kainaraštis</h2>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Paslauga:</th>
+                            <th>Kaina:</th>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 1</td>
+                            <td>399.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 2</td>
+                            <td>149.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 3</td>
+                            <td>479.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 4</td>
+                            <td>143.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 5</td>
+                            <td>399.99</td>
+                        </tr>
+                        <tr>
+                            <td>Paslauga 6</td>
+                            <td>899.99</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="paslaugos-flexbox" id="paslauguFlexbox">
+                    <div onclick="paspaudusPaslaugosTaba('vandensKainarastis')" class="paslauga-item">
+                        <div class="paslauga-header">
+                            <h4>Vandeniu</h4>
+                        </div>
+                        <div class="paslauga-img">
+                            <img src="img/paslaugos_img/ship.png" alt="">
+                        </div>
+                    </div>
+
+                    <div onclick="paspaudusPaslaugosTaba('sausumosKainarastis')" class="paslauga-item">
+                        <div class="paslauga-header">
+                            <h4>Sausumos keliais</h4>
+                        </div>
+                        <div class="paslauga-img">
+                            <img src="img/paslaugos_img/van.png" alt="">
+                        </div>
+                    </div>
+
+                    <div onclick="paspaudusPaslaugosTaba('oroKainarastis')" class="paslauga-item">
+                        <div class="paslauga-header">
+                            <h4>Oru</h4>
+                        </div>
+                        <div class="paslauga-img">
+                            <img src="img/paslaugos_img/plane.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        <a href="https://www.freepik.com/vectors/logo">Logo vector created by freepik - www.freepik.com</a>
+
+    
+    </body>
+</html>
+
